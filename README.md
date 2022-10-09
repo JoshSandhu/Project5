@@ -2,17 +2,13 @@
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We created then a fictitious user story where predictive analytics can be applied in a real project in the workplace.
 * The dataset contains +4 thousand images taken from client's crop fields. The images show cherry leaves that are healthy and cherry leaves that contain powdery mildew, which is a fungal disease that affects a wide range of plants. The cherry plantation crop is one of their finest products in the portfolio and the company is concerned about supplying the market with a product of compromised quality.
 
-
-
 ## Business Requirements
 The cherry plantation crop from Farmy & Foods is facing a challenge where their cherry plantations have been presenting powdery mildew. Currently, the process is to manually verify if a given cherry tree contains powdery mildew. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. If it has powdery mildew, the employee applies a specific compound to kill the fungus. The time spent applying this compound is 1 minute.  The company has thousands of cherry trees located in multiple farms across the country. As a result, this manual process is not scalable due to time spent in the manual process inspection.
 
 To save time in this process, the IT team suggested an ML system that is capable of detecting instantly, using a leaf tree image, if it is healthy or has powdery mildew. A similar manual process is in place for other crops for detecting pests, and if this initiative is successful, there is a realistic chance to replicate this project to all other crops. The dataset is a collection of cherry leaf images provided by Farmy & Foods, taken from their crops.
 
-
 * 1 - The client is interested in conducting a study to visually differentiate a cherry leaf that is healthy and that contains powdery mildew.
 * 2 - The client is interested to predict if a cherry leaf is healthy or contains powdery mildew.
-
 
 ## Hypothesis and how to validate?
 
@@ -31,7 +27,6 @@ Validation is made from a separate folder from the test and training set. This t
 
 The train test and validation ratio is 70%, 20%, and 10%.
 
-
 ## Rationale to map the business requirements to the Data Visualizations and ML tasks
 
 ### Business requirements
@@ -42,17 +37,16 @@ The train test and validation ratio is 70%, 20%, and 10%.
 It will be beneficial to automate the visual differences between infected and healthy cherry leaves. The difference is determinded using greyscale which seems to be the standard, however it is important to note that not every colour map converts linear to greyscale.
 
 #### Predicting algorithm
-This algorithm is used to analyse the nominal categorical variable of leaves with mildew mold or not. This algorithm can be expanded to also cover other visual diseases.
-
+This algorithm is used to analyse the nominal categorical variable of leaves with mildew mold or not. This algorithm can be expanded to also cover other visual diseases due to its uses of greyscale.
 
 ## ML Business Case
-* In the previous bullet, you potentially visualized a ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+This particular business idea was created by the stakeholders, as it was their idea to study the difference between healthy and unhealthy leaves. This was based on the hypothesis that the difference could be accurately identified by an algorithm with a high rate of acuracy.
 
+The data wunderstanding was sorted by the team at Code Institute. A model of deep neaural networks to eliminate the null hypothesis and show great results. Any output data was then shown by a streamlit dashboard and deployed using Heroku. (See steps below)
+
+This is to help ease any repatative workload on employees.
 
 ## Dashboard Design
-* List all dashboard pages and its content, either block of information or widgets, like: buttons, checkbox, image, or any other item that your dashboard library supports.
-* Eventually, during the project development, you may revisit your dashboard plan to update a give feature (for example, in the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type).
-
 
 ## Unfixed Bugs
 * You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
