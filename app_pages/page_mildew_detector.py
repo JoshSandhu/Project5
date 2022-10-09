@@ -13,7 +13,7 @@ from src.machine_learning.predictive_analysis import (
 def page_mildew_detector_body():
 
 
-    images_buffer = st.file_uploader('Upload leaf samples. You may upload more than one.',
+    images_buffer = st.file_uploader('Upload leaf images. You may upload more than one.',
                                         type=['jpg','png'],accept_multiple_files=True)
    
 
@@ -30,7 +30,7 @@ def page_mildew_detector_body():
             pred_proba, pred_class = load_model_and_predict(resized_img, version='v1')
 
             if float(pred_proba) < .9:
-                st.warning("## Uncertain Images, can not determine object")
+                st.warning("## Uncertain image, can not determine object")
 
             else:
                 plot_predictions_probabilities(pred_proba, pred_class)

@@ -8,7 +8,7 @@ import random
 def page_leaf_visualizer_body():
     st.write("### Leaf Visualizer")
     st.info(
-        f"* To see visual differences or have a look at Image Montage, "
+        f"* To see visual differences or have a look at Image montage, "
         f"click the button belew. ")
     
     version = 'v1'
@@ -28,7 +28,7 @@ def page_leaf_visualizer_body():
       st.write("---")
 
 
-    if st.checkbox("Differences between average unhealthy and average healthy leaf"):
+    if st.checkbox("Differences between average unhealthy and average healthy leaves"):
           diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
 
           st.image(diff_between_avgs, caption='Difference between average images')
