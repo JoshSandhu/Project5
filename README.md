@@ -26,6 +26,11 @@ In order to validate high accuracy (97%+) we require a large sample set. With a 
 * Leaf with mildew
 * Leaf without mildew
 
+There is misleading information in this validation of whether the leaf is healthy. It only states with or without mildew with high precision. It is also possible for the leaf to suffer from Mildew except a human will not be able to see it, the deep learning algorithm however can differentiate.
+Validation is made from a separate folder from the test and training set. This tests the algorithm on **new** data ensuring true results.
+
+The train test and validation ratio is 70%, 20%, and 10%.
+
 
 ## Rationale to map the business requirements to the Data Visualizations and ML tasks
 * List your business requirements and a rationale to map them to the Data Visualizations and ML tasks.
