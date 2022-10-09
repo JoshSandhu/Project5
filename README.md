@@ -15,7 +15,16 @@ To save time in this process, the IT team suggested an ML system that is capable
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision to validate it (them).
+
+### Hypothesis
+
+* With high accuracy and the help of Machine Learning models we want to seperate leaves with mildew and those without.
+
+### Validation
+
+In order to validate high accuracy (97%+) we require a large sample set. With a binary classification of objects:
+* Leaf with mildew
+* Leaf without mildew
 
 
 ## Rationale to map the business requirements to the Data Visualizations and ML tasks
