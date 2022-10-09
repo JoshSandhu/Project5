@@ -9,8 +9,8 @@ def page_summary_body():
         f" ### General Information \n"
         "**This website** has a built-in machine learning system that is independantly capable of detecting mildew infection in an image of a cherry tree leaf. "
         f"It can instantly differ between healthy leaves and ones that have powdery mildew. " 
-        f"You can also have a look at the image montage in the (button 2) *Leaf Visualizer* of how images **are optimized**. "
-        f"Click the Mildew Detection (button 3) in the sidebar to go and upload your image and test yourself. \n" 
+        f"You can also have a look at the image montage in the **Leaf Visualizer** (button 2) to see how the images *are optimized*. "
+        f"Click the **Mildew Detection** (button 3) in the sidebar to go and upload your image and test yourself. \n" 
         )
 
 
