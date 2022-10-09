@@ -42,19 +42,82 @@ This algorithm is used to analyse the nominal categorical variable of leaves wit
 ## ML Business Case
 This particular business idea was created by the stakeholders, as it was their idea to study the difference between healthy and unhealthy leaves. This was based on the hypothesis that the difference could be accurately identified by an algorithm with a high rate of acuracy.
 
-The data wunderstanding was sorted by the team at Code Institute. A model of deep neaural networks to eliminate the null hypothesis and show great results. Any output data was then shown by a streamlit dashboard and deployed using Heroku. (See steps below)
+The data understanding was sorted by the team at Code Institute. A model of deep neaural networks to eliminate the null hypothesis and show great results. Any output data was then shown by a streamlit dashboard and deployed using Heroku. (See steps below)
 
 This is to help ease any repatative workload on employees.
 
 ## Dashboard Design
 
-## Unfixed Bugs
-* You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+The design and colour's are sourced from the streamlit library. It has a responsive design for use accross devices and a sidebar collapse going to table size at 768px. Sidebar's initial state is expanded to enhance user experience.
+
+### Sidebar
+
+The sidebar contains 5 boxes for navigation.
+* Box1: Quick project summary.
+* Box2: Leaf visualizer.
+* Box3: Mildew detection.
+* Box4: Project hypothesis.
+* Box5: ML performace metrics.
+
+
+*Box1: Quick project summary*
+
+Package of use:
+* Streamlit
+
+The user is given information on how to get started and the quality of outcome. A button which displays Info when clicked shows where to find business requirements, machine learning information and an external link to README file.
+
+
+*Box2: Leaf visualizer.*
+
+Package of use:
+* Streamlit
+* Matplotlib
+
+There are three checkbox alternatives. These include:
+* Difference between the average and variability image:
+    - Matplotlib shows an average of 20 leaves images in both categories.
+* Differences between average unhealthy and average healthy leaves.
+    - Matplotlib shows the difference between the two categories.
+* Image montage.
+    - Randomly show images from selected category in a 3x3 with matplotlib subplot.\
+        The category is chosen from a select box.
+
+
+*Box3: Mildew detection.*
+
+Package of use:
+* Streamlit
+* PIL
+* Numpy
+* Plotly
+* Pandas
+
+Here the AI will be able to evaluate new unclassified content. The design is clean with a Streamlit file_uploader. The result is then shown via info text and plotly bar. With finally a HTML `<a>` tag to dowenload the result in a CSV file.
+
+
+*box4: Project hypothesis*
+
+Package of use:
+* Streamlit 
+
+The project hypothesis is shown in a success box. 
+
+
+*box5: ML performance metrics*
+
+Package of use:
+* Streamlit
+* Matplotlib
+* Pandas
+
+Matplotlib shows us a png fil over seaborn barplot of the train, validation, and test sets. Next are two dot-line plots of the model history in a png as shown by matplotlib. 
+Next there are three streamlit checkboxes, the first two will show you text about the deep layers and the last is a pandas DataFrame opened up by streamlits dataframe.
 
 ## Deployment
 ### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
+* The App live link is: https://mildew-detector.herokuapp.com/ 
 * The project was deployed to Heroku using the following steps.
 
 1. Log in to Heroku and create an App
