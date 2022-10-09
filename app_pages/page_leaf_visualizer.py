@@ -10,7 +10,7 @@ import itertools
 import random
 
 def page_leaf_visualizer_body():
-    st.write("### Leaves Visualizer")
+    st.write("### Leaf Visualizer")
     st.info(
         f"* The client is interested  study visually differences in "
         f"a healthy and a molded leaf.")
