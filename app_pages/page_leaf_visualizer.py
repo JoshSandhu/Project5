@@ -62,7 +62,7 @@ def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15,10)):
       img_idx = random.sample(images_list, nrows * ncols)
    
 
-    # create list of axes indices based on nrows and ncols
+    # create list of axis indices based on nrows and ncols
     list_rows= range(0,nrows)
     list_cols= range(0,ncols)
     plot_idx = list(itertools.product(list_rows,list_cols))
