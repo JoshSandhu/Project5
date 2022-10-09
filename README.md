@@ -128,26 +128,23 @@ Next there are three streamlit checkboxes, the first two will show you text abou
 
 
 ## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries you used in the project and provide example(s) on how you used these libraries.
+* numpy==1.19.2
+    - Used to convert numbers and objects to arrays and operate on them.
+* pandas==1.1.2
+    - Is used to struckture data. Index data series or a "table" of data in a DataFrames
+* matplotlib==3.3.1
+    - .pyplot (v. 4.12.0) is used to creat almost all graph plots  
+* seaborn==0.11.0
+    - Seaborn helps "styling and ordering pyplots graphs"
+* streamlit==0.85.0
+    - Is used to connect frontend and backend fast and easy.  
+* tensorflow-cpu==2.6.0
+    - Multidimensional array operator building the core of the CNN operations
+* keras==2.6.0
+    - Setting the sequal for the model and hadels operations on the multidimensional arrays
 
 
 ## Credits 
 
-* In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
-
-
-
-## Acknowledgements (optional)
-* In case you would like to thank the people that provided support through this project.
+* This object-oriented website layout is made by GyanShashwat1611 at [Github site](https://github.com/GyanShashwat1611/WalkthroughProject01/).
+* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves)
