@@ -33,7 +33,16 @@ The train test and validation ratio is 70%, 20%, and 10%.
 
 
 ## Rationale to map the business requirements to the Data Visualizations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualizations and ML tasks.
+
+### Business requirements
+* The client is interested to conduct a study which visually can differentiate between a healthy cherry leaf and one that contains powdery mildew.
+* The client will also be intrerested in predicting if a cherry leaf  is infected with powdery mildew or not.
+
+#### Visually differentiate
+It will be beneficial to automate the visual differences between infected and healthy cherry leaves. The difference is determinded using greyscale which seems to be the standard, however it is important to note that not every colour map converts linear to greyscale.
+
+#### Predicting algorithm
+This algorithm is used to analyse the nominal categorical variable of leaves with mildew mold or not. This algorithm can be expanded to also cover other visual diseases.
 
 
 ## ML Business Case
