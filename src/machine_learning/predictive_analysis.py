@@ -28,7 +28,7 @@ def plot_predictions_probabilities(pred_proba, pred_class):
             x = 'Diagnostic',
             y = prob_per_class['Probability'],
             range_y=[0,1],
-            width=600, height=300,template='seaborn')
+            width=600, height=300, template='seaborn')
     st.plotly_chart(fig)
 
 
@@ -57,9 +57,4 @@ def load_model_and_predict(my_image, version):
     pred_class =  target_map[pred_proba > 0.5]  
     if pred_class == target_map[0]: pred_proba = 1 - pred_proba
 
-
-    st.write(
-        f"The predictive analysis indicates the sample leaf is "
-        f"**{pred_class.lower()}** with mildew.")
-    
     return pred_proba, pred_class

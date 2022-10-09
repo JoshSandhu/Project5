@@ -13,7 +13,7 @@ from src.machine_learning.predictive_analysis import (
 def page_mildew_detector_body():
 
 
-    images_buffer = st.file_uploader('Upload leaf samples. You may select more than one.',
+    images_buffer = st.file_uploader('Upload leaf samples. You may upload more than one.',
                                         type=['jpg','png'],accept_multiple_files=True)
    
 
@@ -44,5 +44,11 @@ def page_mildew_detector_body():
 
                     st.markdown(download_dataframe_as_csv(df_report), unsafe_allow_html=True)
                     
+    if st.button("Download test sample images"):
 
+        st.warning(
+        f"* You will be able to find a selection of images to use for **testing**  "
+        f"[here.](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves) "
+        f" opens external link to kaggle."
+        )
       
